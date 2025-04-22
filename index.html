@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Servicios de albañilería profesional en Hermosillo: enjarres, acabados, yeso, vitropiso y más. Calidad garantizada."
+    />
+    <title>Albañilería Profesional en Hermosillo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Albañilería Salvador Garcia</h1>
+        <p>Enjarres, acabados finos, yeso, vitropiso y más</p>
+        <a href="#contacto" class="btn">Solicita tu presupuesto</a>
+      </div>
+    </header>
+
+    <section id="servicios">
+      <div class="container">
+        <h2>Nuestros Servicios</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Enjarres</h3>
+            <p>Aplicación profesional en muros interiores y exteriores.</p>
+          </div>
+          <div class="card">
+            <h3>Acabado Fino</h3>
+            <p>Superficies listas para pintar con excelente presentación.</p>
+          </div>
+          <div class="card">
+            <h3>Yeso</h3>
+            <p>Soluciones rápidas para interiores, limpio y duradero.</p>
+          </div>
+          <div class="card">
+            <h3>Pega de Vitropiso</h3>
+            <p>Instalación precisa de piso cerámico y azulejo.</p>
+          </div>
+          <div class="card">
+            <h3>Trabajos Generales</h3>
+            <p>Reparaciones, impermeabilización, pintura y más.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cotizador" class="bg-light">
+      <div class="container">
+        <h2>Cotizador de Servicios</h2>
+        <div class="container_cotizador">
+          <!-- Cotizador Enjarre -->
+          <div
+            class="cotizador-box"
+            data-servicio="Enjarre"
+            data-precio-min="120"
+            data-precio-max="150"
+          >
+            <h3>Enjarre</h3>
+            <form class="formCotizador">
+              <label
+                >Base (m): <input type="number" class="base" step="0.1"
+              /></label>
+              <label
+                >Altura (m): <input type="number" class="altura" step="0.1"
+              /></label>
+              <p style="text-align: center">— o —</p>
+              <label
+                >Metros Cuadrados: <input type="number" class="m2" step="0.1"
+              /></label>
+              <button type="submit" class="btn">Calcular</button>
+              <div class="resultado"></div>
+            </form>
+          </div>
+
+          <!-- Cotizador Yeso -->
+          <div
+            class="cotizador-box"
+            data-servicio="Yeso"
+            data-precio-min="80"
+            data-precio-max="100"
+          >
+            <h3>Yeso</h3>
+            <form class="formCotizador">
+              <label
+                >Base (m): <input type="number" class="base" step="0.1"
+              /></label>
+              <label
+                >Altura (m): <input type="number" class="altura" step="0.1"
+              /></label>
+              <p style="text-align: center">— o —</p>
+              <label
+                >Metros Cuadrados: <input type="number" class="m2" step="0.1"
+              /></label>
+              <button type="submit" class="btn">Calcular</button>
+              <div class="resultado"></div>
+            </form>
+          </div>
+
+          <!-- Cotizador Vitropiso -->
+          <div
+            class="cotizador-box"
+            data-servicio="Vitropiso"
+            data-precio-min="30"
+            data-precio-max="50"
+          >
+            <h3>Vitropiso</h3>
+            <form class="formCotizador">
+              <label
+                >Base (m): <input type="number" class="base" step="0.1"
+              /></label>
+              <label
+                >Altura (m): <input type="number" class="altura" step="0.1"
+              /></label>
+              <p style="text-align: center">— o —</p>
+              <label
+                >Metros Cuadrados: <input type="number" class="m2" step="0.1"
+              /></label>
+              <button type="submit" class="btn">Calcular</button>
+              <div class="resultado"></div>
+            </form>
+          </div>
+
+          <!-- Agrega más cotizadores aquí... -->
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-nosotros" class="bg-light">
+      <div class="container">
+        <h2>Sobre Nosotros</h2>
+        <p>
+          Con más de 10 años de experiencia en el oficio, ofrecemos calidad,
+          honestidad y compromiso en cada trabajo. Atendemos en Hermosillo y
+          alrededores.
+        </p>
+      </div>
+    </section>
+
+    <section id="galeria">
+      <div class="container">
+        <h2>Galería de Trabajos</h2>
+        <p>
+          (Aquí puedes agregar imágenes de tus trabajos reales más adelante)
+        </p>
+      </div>
+    </section>
+
+    <section id="contacto" class="bg-light">
+      <div class="container">
+        <h2>Contacto</h2>
+        <p>Solicita tu cotización sin compromiso:</p>
+        <ul>
+          <li>📱 WhatsApp: 123-456-7890</li>
+          <li>📧 Correo: tuemail@ejemplo.com</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2025 Albañilería Salvador Garcia – Todos los derechos reservados.
+      </p>
+    </footer>
+
+    <script src="js/cotizador.js"></script>
+  </body>
+</html>
