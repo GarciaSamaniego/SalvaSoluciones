@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const precioMax = parseFloat(cotizadorBox.dataset.precioMax);
   
         const base = parseFloat(form.querySelector('.base').value);
+        const baseInput = form.querySelector
         const altura = parseFloat(form.querySelector('.altura').value);
         const m2Input = parseFloat(form.querySelector('.m2').value);
         const resultadoDiv = form.querySelector('.resultado');
@@ -33,6 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
           <p>Área: <strong>${metrosCuadrados.toFixed(2)} m²</strong></p>
           <p>Estimado: <strong>$${estimadoMin.toFixed(2)} – $${estimadoMax.toFixed(2)}</strong></p>
         `;
+
+        form.reset();
       });
     });
   });

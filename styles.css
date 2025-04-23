@@ -132,6 +132,11 @@ body {
     font-size: 1rem;
     width: 50%;
   }
+
+  .formCotizador > label {
+    display: flex;
+    justify-content: space-between;
+  }
   
   .resultado {
     margin-top: 2rem;
