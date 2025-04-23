@@ -1,201 +1,122 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Servicios de albañilería profesional en Hermosillo: enjarres, acabados, yeso y más. Calidad garantizada."
-    />
-    <title>Albañilería Profesional en Hermosillo</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <h1>Albañil Salvador Garcia</h1>
-        <p>Enjarres, acabados finos, yeso y más</p>
-        <a href="#contacto" class="btn">Solicita tu presupuesto</a>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Servicios de albañilería profesional en Hermosillo: enjarres, acabados, yeso y más. Calidad garantizada." />
+  <title>Albañilería Profesional en Hermosillo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Albañil Salvador Garcia</h1>
+      <p>Enjarres, acabados finos, yeso y más</p>
+      <a href="#contacto" class="btn">Solicita tu presupuesto</a>
+    </div>
+  </header>
 
-    <section id="servicios">
-      <div class="container">
-        <h2>Nuestros Servicios</h2>
-        <div class="grid">
-          <div class="card">
-            <h3>Enjarres</h3>
-            <p>Aplicación profesional en muros interiores y exteriores.</p>
-          </div>
-          <div class="card">
-            <h3>Acabado Fino</h3>
-            <p>Superficies listas para pintar con excelente presentación.</p>
-          </div>
-          <div class="card">
-            <h3>Yeso</h3>
-            <p>Soluciones rápidas para interiores, limpio y duradero.</p>
-          </div>
-          <div class="card">
-            <h3>Trabajos Generales</h3>
-            <p>Reparaciones, impermeabilización, pintura y más.</p>
-          </div>
+  <section id="servicios">
+    <div class="container">
+      <h2>Nuestros Servicios</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Enjarres</h3>
+          <p>Aplicación profesional en muros interiores y exteriores.</p>
+        </article>
+        <article class="card">
+          <h3>Acabado Fino</h3>
+          <p>Superficies listas para pintar con excelente presentación.</p>
+        </article>
+        <article class="card">
+          <h3>Yeso</h3>
+          <p>Soluciones rápidas para interiores, limpio y duradero.</p>
+        </article>
+        <article class="card">
+          <h3>Trabajos Generales</h3>
+          <p>Reparaciones, impermeabilización, pintura y más.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="cotizador" class="bg-light">
+    <div class="container">
+      <h2>Cotizador de Servicios</h2>
+      <div class="container_cotizador">
+        <!-- Repite por tipo de servicio -->
+        <div class="cotizador-box" data-servicio="Enjarre" data-precio-min="120" data-precio-max="150">
+          <h3>Enjarre</h3>
+          <form class="formCotizador">
+            <label>Base (m): <input type="number" class="base" step="0.1" placeholder="3" /></label>
+            <label>Altura (m): <input type="number" class="altura" step="0.1" placeholder="2" /></label>
+            <p style="text-align: center">— o —</p>
+            <label>Metros Cuadrados: <input type="number" class="m2" step="0.1" placeholder="6" /></label>
+            <button type="submit" class="btn">Calcular</button>
+            <div class="resultado"></div>
+          </form>
         </div>
-      </div>
-    </section>
 
-    <section id="cotizador" class="bg-light">
-      <div class="container">
-        <h2>Cotizador de Servicios</h2>
-        <div class="container_cotizador">
-          <!-- Cotizador Enjarre -->
-          <div
-            class="cotizador-box"
-            data-servicio="Enjarre"
-            data-precio-min="120"
-            data-precio-max="150"
-          >
-            <h3>Enjarre</h3>
-            <form class="formCotizador">
-              <label
-                >Base (m):
-                <input type="number" class="base" step="0.1" placeholder="3"
-              /></label>
-              <label
-                >Altura (m):
-                <input type="number" class="altura" step="0.1" placeholder="2"
-              /></label>
-              <p style="text-align: center">— o —</p>
-              <label
-                >Metros Cuadrados:
-                <input type="number" class="m2" step="0.1" placeholder="6"
-              /></label>
-              <button type="submit" class="btn">Calcular</button>
-              <div class="resultado"></div>
-            </form>
-          </div>
-
-          <!-- Cotizador Fino -->
-          <div
-            class="cotizador-box"
-            data-servicio="Fino"
-            data-precio-min="160"
-            data-precio-max="200"
-          >
-            <h3>Fino</h3>
-            <form class="formCotizador">
-              <label
-                >Base (m):
-                <input type="number" class="base" step="0.1" placeholder="4"
-              /></label>
-              <label
-                >Altura (m):
-                <input type="number" class="altura" step="0.1" placeholder="3"
-              /></label>
-              <p style="text-align: center">— o —</p>
-              <label
-                >Metros Cuadrados:
-                <input type="number" class="m2" step="0.1" placeholder="12"
-              /></label>
-              <button type="submit" class="btn">Calcular</button>
-              <div class="resultado"></div>
-            </form>
-          </div>
-
-          <!-- Cotizador Yeso -->
-          <div
-            class="cotizador-box"
-            data-servicio="Yeso"
-            data-precio-min="60"
-            data-precio-max="90"
-          >
-            <h3>Yeso</h3>
-            <form class="formCotizador">
-              <label
-                >Base (m):
-                <input type="number" class="base" step="0.1" placeholder="3"
-              /></label>
-              <label
-                >Altura (m):
-                <input type="number" class="altura" step="0.1" placeholder="2"
-              /></label>
-              <p style="text-align: center">— o —</p>
-              <label
-                >Metros Cuadrados:
-                <input type="number" class="m2" step="0.1" placeholder="6"
-              /></label>
-              <button type="submit" class="btn">Calcular</button>
-              <div class="resultado"></div>
-            </form>
-          </div>
-
-          <!-- Cotizador Vitropiso 
-          <div
-            class="cotizador-box"
-            data-servicio="Vitropiso"
-            data-precio-min="30"
-            data-precio-max="50"
-          >
-            <h3>Vitropiso</h3>
-            <form class="formCotizador">
-              <label
-                >Base (m): <input type="number" class="base" step="0.1"
-placeholder="3"              /></label>
-              <label
-                >Altura (m): <input type="number" class="altura" step="0.1"
-placeholder="2"              /></label>
-              <p style="text-align: center">— o —</p>
-              <label
-                >Metros Cuadrados: <input type="number" class="m2" step="0.1" placeholder="6"
-              /></label>
-              <button type="submit" class="btn">Calcular</button>
-              <div class="resultado"></div>
-            </form>
-          </div>
-          -->
-
-          <!-- Agrega más cotizadores aquí... -->
+        <div class="cotizador-box" data-servicio="Fino" data-precio-min="160" data-precio-max="200">
+          <h3>Fino</h3>
+          <form class="formCotizador">
+            <label>Base (m): <input type="number" class="base" step="0.1" placeholder="3" /></label>
+            <label>Altura (m): <input type="number" class="altura" step="0.1" placeholder="2" /></label>
+            <p style="text-align: center">— o —</p>
+            <label>Metros Cuadrados: <input type="number" class="m2" step="0.1" placeholder="6" /></label>
+            <button type="submit" class="btn">Calcular</button>
+            <div class="resultado"></div>
+          </form>
         </div>
-      </div>
-    </section>
 
-    <section id="sobre-nosotros" class="bg-light">
-      <div class="container">
-        <h2>Sobre Nosotros</h2>
-        <p>
-          Con más de 6 años de experiencia en albañilería y acabados, nos
-          dedicamos a brindar resultados de calidad con honestidad y compromiso.
-          Trabajamos en Hermosillo y sus alrededores, y estamos listos para
-          asumir desde los proyectos más pequeños hasta los más exigentes.
-        </p>
-      </div>
-    </section>
-    <!-- #region 
-    <section id="galeria">
-      <div class="container">
-        <h2>Galería de Trabajos</h2>
-        <p>
-          (Imagenes pendientes)
-        </p>
-      </div>
-    </section>
--->
-    <section id="contacto" class="bg-light">
-      <div class="container">
-        <h2>Contacto</h2>
-        <p>Solicita tu cotización sin compromiso:</p>
-        <ul>
-          <li>📱 WhatsApp: 6623543728</li>
-          <li>📧 Correo: garciasamaniego.salvador@gmail.com</li>
-        </ul>
-      </div>
-    </section>
+        <div class="cotizador-box" data-servicio="Yeso" data-precio-min="70" data-precio-max="90">
+          <h3>Yeso</h3>
+          <form class="formCotizador">
+            <label>Base (m): <input type="number" class="base" step="0.1" placeholder="3" /></label>
+            <label>Altura (m): <input type="number" class="altura" step="0.1" placeholder="2" /></label>
+            <p style="text-align: center">— o —</p>
+            <label>Metros Cuadrados: <input type="number" class="m2" step="0.1" placeholder="6" /></label>
+            <button type="submit" class="btn">Calcular</button>
+            <div class="resultado"></div>
+          </form>
+        </div>
 
-    <footer>
+        <!-- Repite para otros servicios como Fino y Yeso (idéntico) -->
+        <!-- ... -->
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre-nosotros" class="bg-light">
+    <div class="container">
+      <h2>Sobre Nosotros</h2>
       <p>
-        &copy; 2025 Albañil Salvador Garcia – Todos los derechos reservados.
+        Con más de 6 años de experiencia en albañilería y acabados, brindamos resultados de calidad con honestidad y compromiso.
+        Trabajamos en Hermosillo y sus alrededores, desde proyectos pequeños hasta grandes obras.
       </p>
-    </footer>
+    </div>
+  </section>
 
-    <script src="cotizador.js"></script>
-  </body>
+  <section id="contacto" class="bg-light">
+    <div class="container">
+      <h2>Contacto</h2>
+      <p>Solicita tu cotización sin compromiso:</p>
+      <ul>
+        <li>📱 WhatsApp: <a href="https://wa.me/526623543728" target="_blank"> 6623543728</a></li>
+        <li>📧 Correo: <a href="mailto:garciasamaniego.salvador@gmail.com">garciasamaniego.salvador@gmail.com</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <a href="https://wa.me/526623543728" class="whatsapp-float" aria-label="WhatsApp contacto" target="_blank">
+    <img src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000" alt="WhatsApp" />
+  </a>
+
+  <footer>
+    <p>&copy; 2025 Albañil Salvador Garcia – Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="cotizador.js"></script>
+</body>
 </html>
